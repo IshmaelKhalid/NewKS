@@ -65,4 +65,9 @@ class NewKS::CLI
     # Then prompt question again
   end
 
+  def goodbye # Closing Method
+    # Signal to the user that CLI has ended
+    puts "Thanks for stopping by. See you later for more projects!"
+  end
+
 end
