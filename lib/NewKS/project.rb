@@ -33,4 +33,9 @@ class NewKS::Project
       names.collect{|e| new(e.text.strip, "https://www.kickstarter.com#{e.attr("href").split("?").first.strip}")}
       # Split at "?", take first part and remove whitespace
     end
+
+    # Set doc variable for all html scraped from an objects url
+    def doc
+      @doc ||= Nokogiri::HTML(open(self.url))
+    end
 end
