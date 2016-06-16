@@ -1,5 +1,2 @@
-require "NewKS/version"
-
-module NewKS
-  # Your code goes here...
-end
+# require environment file where other requirements are stored
+require_relative '../config/environment'
