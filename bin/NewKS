@@ -4,4 +4,8 @@
 require_relative '../lib/NewKS'
 
 # Put here to avoid logic in bin folder
-puts "Hello World!"
+def hi
+  puts "Hello World!"
+end
+
+hi
