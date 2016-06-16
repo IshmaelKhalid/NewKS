@@ -48,4 +48,21 @@ class NewKS::CLI
     end
   end
 
+  def more_info(project)
+    puts "" #Skips Line
+    # Run .name method on searched project
+    puts "-------------- #{project.name} --------------" 
+    puts "" #Skips Line
+    # Run .summary method on searched project
+    puts project.summary
+    puts "" #Skips Line
+    # Run .author method on searched project
+    puts "Author: #{project.author}"
+    puts "" #Skips Line
+    # Run .url method on searched project
+    puts "URL: #{project.url}"
+    puts "" #Skips Line
+    # Then prompt question again
+  end
+
 end
