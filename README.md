@@ -1,8 +1,8 @@
 # NewKS
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/NewKS`. To experiment with that code, run `bin/console` for an interactive prompt.
+https://rubygems.org/gems/NewKS
 
-TODO: Delete this and the text above, and describe your gem
+This ruby gem is a simple command line interface (CLI) to access the top 20 newest projects on Kickstarter.com.This gem also allows you to recieve basic information about those projects and a link to their project page.
 
 ## Installation
 
@@ -22,7 +22,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Use this gem to study ruby techniques or just to keep up-to-date with your favorite KS Projects!
 
 ## Development
 
@@ -32,10 +32,9 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/NewKS. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/IshmaelKhalid/newest_kickstarter. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
