@@ -21,6 +21,16 @@ class NewKS::Project
     self.all[id-1]
   end
 
+  def summary
+    # fetch summary if available or search doc and retrieve
+    @summary ||= doc.search("p.h3").text.strip
+  end
+
+  def author
+    # fetch author if available or search doc and retrieve
+    @author ||= doc.search('h5.mobile-hide a[data-modal-class="modal_project_by"]').text.strip
+  end
+
   private
     # scrape method for kickstarter projects
     def self.scrape_newest_projects
