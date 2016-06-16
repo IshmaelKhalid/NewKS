@@ -4,8 +4,4 @@
 require_relative '../lib/NewKS'
 
 # Put here to avoid logic in bin folder
-def hi
-  puts "Hello World!"
-end
-
-hi
+NewKS::CLI.new.start
