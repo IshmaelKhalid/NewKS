@@ -18,4 +18,34 @@ class NewKS::CLI
     puts "" #Skips Line
   end
 
+  def menu # Interactive Method
+    input = nil # Define input for while method on next line
+    while input != "exit" #run this code unless user inputs exit
+      # Ask user for specific input
+      puts "Enter the number of the project you would like more info on, or type list for projects, or type exit"
+      #recieve user input, remove whitespace, and make lowercase
+      input = gets.strip.downcase
+      # Start Case Method based on user input
+      case input
+      when "list"
+        list # Run list method, then prompt question again
+      else #check if its a number, and add if statment
+        new_input = nil # Define new_input in case next line breaks
+        new_input = input.to_i # make user input a number
+        # check if user input a number between 1-20
+        if new_input.between?(1,20)
+          # take user input and run .find method on Project class
+          project = NewKS::Project.find(new_input)
+          # check if user input a number between 1-20 and i so
+          #run more_info method with an argument of the project
+          more_info(project)
+          # Then prompt question again
+        else # if user input is not a number between 1-20
+          puts "Oops!"
+          # Then prompt question again
+        end
+      end
+    end
+  end
+
 end
