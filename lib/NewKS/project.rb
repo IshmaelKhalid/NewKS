@@ -2,6 +2,14 @@ class NewKS::Project
   attr_accessor :name, :url, :summary, :author
   # reader and writer methods for my project properties
 
+  # Initialize new projects with a name and url 
+  # Set to nil if not provided
+  def initialize(name = nil, url = nil)
+    # Set instance variables for project properties
+    @name = name
+    @url = url
+  end
+
   def self.all
     # fetch all projects if available or scrape KS
     @@all ||= scrape_newest_projects
