@@ -20,4 +20,17 @@ class NewKS::Project
     # [id-1] for offset, id starts @ 1, index starts @ 0
     self.all[id-1]
   end
+
+  private
+    # scrape method for kickstarter projects
+    def self.scrape_newest_projects
+      # Set doc variable for all html scraped from KS Page
+      doc = Nokogiri::HTML(open('https://www.kickstarter.com/discover/advanced?recommended=false&sort=newest'))
+      # Set names variable for all project names scraped from doc
+      names = doc.search('h6.project-title a[data-score="null"]')
+      # iterate through names variable, collect name text, and url
+      # instantiate new project with name text and url for each pair
+      names.collect{|e| new(e.text.strip, "https://www.kickstarter.com#{e.attr("href").split("?").first.strip}")}
+      # Split at "?", take first part and remove whitespace
+    end
 end
