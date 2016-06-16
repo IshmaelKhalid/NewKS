@@ -1,4 +1,4 @@
-# NewKS
+# NewKS - A revision of newest_kickstarter gem
 
 https://rubygems.org/gems/NewKS
 
