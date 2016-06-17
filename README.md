@@ -22,7 +22,7 @@ Or install it yourself as:
 
 ## Usage
 
-Use this gem to study ruby techniques or just to keep up-to-date with your favorite KS Projects!
+Once installed just type "NewKS" to bring up list of new Kickstarter projects and menu interface.Use this gem to study ruby techniques or just to keep up-to-date with your favorite KS Projects!
 
 ## Development
 
