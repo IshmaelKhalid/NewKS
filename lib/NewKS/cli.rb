@@ -27,8 +27,10 @@ class NewKS::CLI
       input = gets.strip.downcase
       # Start Case Method based on user input
       case input
+      when "exit"
+
       when "list"
-        list # Run list method, then prompt question again
+        list # Run list method, then prompt question again   
       else #check if its a number, and add if statment
         new_input = nil # Define new_input in case next line breaks
         new_input = input.to_i # make user input a number
